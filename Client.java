@@ -15,8 +15,6 @@ public class Client {
 
     public static void main(String[] args) {
 
-        System.out.println(args.length);
-
         if (args.length == 1) {
             // Only host
             connection = new Conn(args[0]);
@@ -32,7 +30,6 @@ public class Client {
         }
         getmessagesthreadThread = new getmessagesthread(connection);
         typemessagethread = new typeMsgThread(connection);
-        getmessagesthreadThread.sendMsg();
     }
 
     public Client() {

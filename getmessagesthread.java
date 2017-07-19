@@ -23,9 +23,6 @@ public class getmessagesthread extends Thread {
         start();
     }
 
-    public void sendMsg() {
-    }
-
     public void run() {
         if (connection.socket != null && connection.in != null) {
             System.out.println("Reciving messages");

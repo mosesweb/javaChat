@@ -5,7 +5,7 @@ import java.io.*;
 import java.nio.*;
 import java.io.Console;
 
-public class Conn extends Thread {
+public class Conn {
     public Socket socket = null;
     public BufferedReader in = null;
     public PrintWriter out = null;
